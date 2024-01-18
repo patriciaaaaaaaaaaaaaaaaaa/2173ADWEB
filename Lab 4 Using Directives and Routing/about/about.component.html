@@ -1,0 +1,21 @@
+<hr>
+<p>This is my About Page!</p>
+<hr>
+<img src={{imageUrl}} alt="Header Image" [width]="imageW" [height]="imageH" style="margin-top: 50px;"/>
+<img [src]="imageUrl" alt="Header Image" [width]="imageW" [height]="imageH" style="margin-top: 50px;"/>
+<img [src]="imageUrl" alt="Header Image" [width]="imageW" [height]="imageH" style="margin-top: 50px;"/>
+
+
+<p [style.color] = "myColor">Text color was style using style binding!</p>
+
+<p [class]="appliedCSS">Name: Patricia Mae Q. Quiatchon </p>
+<p [class]="appliedCSS">Age: 20 </p>
+<p [class]="appliedCSS">School: Holy Angel University </p>
+
+
+
+<!-- Example Button -->
+<p>Count on me {{clickCount}}</p>
+<button (click)="clickMe()">Click Me</button>
+
+
