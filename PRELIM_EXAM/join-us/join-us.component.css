@@ -1,0 +1,82 @@
+.center{
+  position:absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  align-items: center;
+  text-align: center;
+}
+
+.center h1{
+  color: white;
+  text-shadow: 3px 3px 8px black;
+  font-size: 3rem;
+  text-align: center;
+}
+.center h6{
+  color: white;
+  text-shadow: 3px 3px 8px black;
+  font-size: 2rem;
+  text-align: center;
+}
+.button-design button {
+  background-color: #6e6e6e;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.button-design button:hover {
+  background-color: #0167f5;
+}
+.hr{
+  text-align: center;
+  font-size: 1.5rem;
+} 
+
+form {
+  max-width: 400px;
+  margin: auto;
+}
+
+div {
+  margin-bottom: 15px;
+}
+
+label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+input {
+  width: 100%;
+  padding: 8px;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+.center-title{
+  text-align: center;
+  align-items: center;
+  font-size: 2rem;
+  margin-top: 1rem;
+}
+/* Style read-only fields */
+input[readonly] {
+  background-color: #f5f5f5;
+  cursor: not-allowed;
+}
+
+button {
+  background-color: #6e6e6e;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+button:hover {
+  background-color: #0167f5;
+}

@@ -1,0 +1,37 @@
+.center{
+  position:absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  align-items: center;
+  text-align: center;
+}
+
+.center h1{
+  color: white;
+  text-shadow: 3px 3px 8px black;
+  font-size: 3rem;
+  text-align: center;
+}
+.center h6{
+  color: white;
+  text-shadow: 3px 3px 8px black;
+  font-size: 2rem;
+  text-align: center;
+}
+.button-design button {
+  background-color: #6e6e6e;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.button-design button:hover {
+  background-color: #0167f5;
+}
+.hr{
+  text-align: center;
+  font-size: 1.5rem;
+} 
+

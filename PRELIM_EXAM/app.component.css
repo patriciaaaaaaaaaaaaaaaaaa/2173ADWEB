@@ -1,0 +1,12 @@
+.navbarrr a{
+  display:inline;
+  margin:1rem 2rem;
+  text-decoration: none;
+  font-size: 20px;
+  color: rgb(6, 10, 69);
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.navbarrr{
+  margin: 1rem 2rem;
+  padding: 0 2rem;
+}
