@@ -1,0 +1,53 @@
+<div class="content"> 
+  <img src="{{ imageUrl }}" alt="Header Image" [width]="imageW" [height]="imageH" />
+  <div class="center"><h1>Join Our Mailing List!</h1>
+    <h6>Join and meet thousands academicians around the globe and stay updated!</h6>
+    
+    <div class="button-design">
+      <button (click)="showData($event)">Click here to JOIN!</button>
+  </div></div>
+  
+
+
+
+
+<div class="center-title">
+  <strong>Fill the form below:</strong>
+  </div>
+  <form>
+    <div>
+      <label for="firstName">First Name:</label>
+      <input type="text" id="firstName" [(ngModel)]="userData.firstName" name="firstName" placeholder="Enter your first name">
+    </div>
+  
+    <div>
+      <label for="lastName">Last Name:</label>
+      <input type="text" id="lastName" [(ngModel)]="userData.lastName" name="lastName" placeholder="Enter your last name">
+    </div>
+  
+    <div>
+      <label for="fullName">Full Name:</label>
+      <input type="text" id="fullName" [value]="userData.firstName + ' ' + userData.lastName" readonly>
+    </div>
+  
+    <div>
+      <label for="email">Enter Email Address:</label>
+      <input type="email" id="email" [(ngModel)]="userData.email" name="email" placeholder="Enter your email address">
+    </div>
+  
+    <div>
+      <label for="emailDisplay">Email:</label>
+      <input type="text" id="emailDisplay" [value]="userData.email" readonly>
+    </div>
+  
+    <div>
+      <label for="institution">Enter Institution:</label>
+      <input type="text" id="institution" [(ngModel)]="userData.institution" name="institution" placeholder="Enter your institution">
+    </div>
+  
+    <div>
+      <label for="academicInstitution">Academic Institution:</label>
+      <input type="text" id="academicInstitution" [(ngModel)]="userData.academicInstitution" name="academicInstitution" placeholder="Enter your academic institution">
+    </div>
+  </form>
+  <br><br><br><br><br><br><br><br><br><br><br>
