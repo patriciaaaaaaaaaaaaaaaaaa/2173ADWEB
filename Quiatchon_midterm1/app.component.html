@@ -1,0 +1,66 @@
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Protest+Riot&display=swap');
+  </style>
+
+
+<div>
+  <h3>Adding the Date pipe</h3>
+  Today's date:- {{presentDate | date}}
+  <hr>
+<h3>Parameters in Date</h3>
+  This is a short date :- {{presentDate | date:'shortDate' }} <br/>
+  This line shows the full date :- {{presentDate | date:'fullDate'}} <br/>
+  This will show a formatted date :- {{presentDate | date: 'M/dd/yyyy'}} <br/>
+  This indicates the hours and minutes :- {{presentDate | date: 'h:mm'}}
+  <br><br>
+  <hr>
+</div>
+
+<div>
+  <h3>Chained Pipes</h3>
+  <p>Date with uppercase :- {{ presentDate | date:'fullDate' | uppercase}}</p> 
+ <p>Date with lowercase :- {{  presentDate | date:'medium' | lowercase}}</p>
+<hr>
+</div>
+
+<div>
+  <h3>Built-in Pipes</h3>
+  <p>Seconds changing in Time: {{ time$ | async | date:'mediumTime'}}</p>
+<hr>
+</div>
+
+<div>
+<h3>Currency Pipes</h3>
+<p>{{ price | currency:'':true }}</p>
+<p>{{ price | currency:'INR' }}</p>
+<hr>
+</div>
+
+<div>
+<h3>Slice Pipe</h3>
+<h3>Start index :- {{ Fruits | slice:2}}</h3>
+<h4>Start and end index :- {{ Fruits | slice:1:4 }}</h4>
+<p>Negative index :- {{ Fruits | slice:-2}}</p>
+<p>Negative start and end index :- {{Fruits | slice:-4 : -2}}</p>
+<hr>
+</div>
+
+<div style="text-align: center;">
+  <h3>Decimal Pipe</h3>
+  <p> {{ decimalNum1 | number }}</p>
+  <p> {{ decimalNum2 | number }}</p>
+  <hr>
+  <hr/>
+
+  <h3>JSON PIPE</h3>
+  <div>
+    <p>Without JSON pipe:</p>
+    <pre>{{ object }}</pre>
+    <p>With JSON pipe:</p>
+    <pre>{{ object | json }}</pre>
+  </div>`
+  <p>Apply formatting :- {{ decimalNum1 | number: '3.1' }}</p>
+  <p> Apply formatting :- {{ decimalNum1 | number: '2.1-4'}}</p>
+</div>
+
+<h2></h2>
