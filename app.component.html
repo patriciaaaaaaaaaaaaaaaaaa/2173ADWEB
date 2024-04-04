@@ -1,11 +1,108 @@
+<h3 class="nav"> Angular Material Components Demo</h3>
+<mat-tab-group>
+<!-- Input tab -->
+<mat-tab label="Input"> <form class="form1">
+  <mat-form-field class="example-full-width">
+    <mat-label>Your Name</mat-label>
+    <input matInput placeholder="Ex. Juan Dela Cruz">
+  </mat-form-field>
+   <br>
 
-<div>
-  <nav class="navbarrr">
-    <a routerLink="home" routerLinkActive="active">Home</a> 
-    <a routerLink="partners">Partners</a> 
-    <a routerLink="about">About</a>  
-    <a routerLink="JoinUs">Join-Us</a>  
-  </nav>
-  
-  <router-outlet></router-outlet>
-</div>
+  <mat-form-field class="example-full-width">
+    <mat-label>Section</mat-label>
+    <input matInput placeholder="Ex. WD-301">
+  </mat-form-field> 
+  <br>
+
+  <mat-form-field class="example-full-width">
+    <mat-label>Subject</mat-label>
+    <input matInput>
+  </mat-form-field>
+
+</form> </mat-tab>
+
+<!-- Radio button -->
+<mat-tab label="Radio button">
+<mat-radio-group aria-label="Select an option">
+  <mat-radio-button value="1">English</mat-radio-button>
+  <mat-radio-button value="2">Filipino</mat-radio-button>
+</mat-radio-group> </mat-tab>
+
+
+<!-- Button -->
+<mat-tab label="Button">
+<section>
+  <div class="example-label"></div>
+  <div class="example-button-row">
+    <div class="example-flex-container">
+      <div class="example-button-container">
+        <button mat-fab color="primary" aria-label="Example icon button with a delete icon">
+          <mat-icon>delete</mat-icon>
+        </button>
+      </div>
+      <div class="example-button-container">
+        <button mat-fab color="accent" aria-label="Example icon button with a bookmark icon">
+          <mat-icon>bookmark</mat-icon>
+        </button>
+      </div>
+      <div class="example-button-container">
+        <button mat-fab color="warn" aria-label="Example icon button with a home icon">
+          <mat-icon>home</mat-icon>
+        </button>
+      </div>
+      <div class="example-button-container">
+        <button mat-fab disabled aria-label="Example icon button with a heart icon">
+          <mat-icon>favorite</mat-icon>
+        </button>
+      </div>
+    </div>
+  </div>
+</section>
+</mat-tab>
+
+<!-- Grid List -->
+<mat-tab label="Grid List">
+<mat-grid-list cols="2" rowHeight="2:1">
+  <mat-grid-tile>Hi</mat-grid-tile>
+  <mat-grid-tile>Good Day!!</mat-grid-tile>
+  <mat-grid-tile>Have A great day</mat-grid-tile>
+  <mat-grid-tile>See You</mat-grid-tile>
+</mat-grid-list></mat-tab>
+
+<!-- Date Picker
+<mat-form-field>
+  <mat-label>Choose a date</mat-label>
+  <input matInput [matDatepicker]="picker">
+  <mat-hint>MM/DD/YYYY</mat-hint>
+  <mat-datepicker-toggle matIconSuffix [for]="picker"></mat-datepicker-toggle>
+  <mat-datepicker #picker></mat-datepicker>
+</mat-form-field> -->
+
+</mat-tab-group>
+
+<nav class="bg-white border-gray-200 dark:bg-gray-900">
+  <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+    <a href="#" class="text-blue-500 hover:text-blue-800">
+        <img src="https://www.hau.edu.ph/images/logo-circle.png" class="h-16" alt="HAU Logo" />
+        <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">HAU</span>
+    </a>
+    <button data-collapse-toggle="navbar-solid-bg" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-solid-bg" aria-expanded="false">
+        <span class="sr-only">Open main menu</span>
+        <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
+            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15"/>
+        </svg>
+    </button>
+    <div class="hidden w-full md:block md:w-auto">
+      <ul class="flex flex-col font-medium mt-4 rounded-lg bg-gray-50 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-transparent dark:bg-gray-800 md:dark:bg-transparent dark:border-gray-700">
+       
+        <li>
+          <a routerLink="/add-book" routerLinkActive="active" [routerLinkActiveOptions]={exact:true}>Add Books</a>
+        </li>
+        <li>
+          <a routerLink="/books-list" routerLinkActive="active">Show Books</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<router-outlet></router-outlet>

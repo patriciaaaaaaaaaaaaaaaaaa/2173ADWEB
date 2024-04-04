@@ -1,12 +1,65 @@
-.navbarrr a{
-  display:inline;
-  margin:1rem 2rem;
-  text-decoration: none;
-  font-size: 20px;
-  color: rgb(6, 10, 69);
-  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-}
-.navbarrr{
-  margin: 1rem 2rem;
-  padding: 0 2rem;
-}
+.active{ 
+    background: 'light-gray' 
+  }
+  .nav{
+    padding: 10px;
+    background-color: #4a70c3;
+    color: #fff;
+    font-size: 22px;
+    font-weight: 500;
+    text-align: center;
+  }
+
+  .form1{
+    margin: 2rem 2rem;
+  }
+  .tab2{
+    margin: 3rem 20rem;
+  }
+  mat-grid-tile {
+    background: lightblue;
+  }
+
+  /* Radio Button */
+  .mat-mdc-radio-button ~ .mat-mdc-radio-button {
+    align-items: center;
+  }
+
+  /* button */
+  section {
+    display: table;
+  }
+  
+  .example-label {
+    display: table-cell;
+    font-size: 14px;
+    margin-left: 8px;
+    min-width: 120px;
+  }
+  
+  .example-button-row {
+    display: table-cell;
+    max-width: 600px;
+  }
+  
+  .example-button-row .mat-mdc-button-base {
+    margin: 8px 8px 8px 0;
+  }
+  
+  .example-flex-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  
+  .example-button-container {
+    display: flex;
+    justify-content: center;
+    width: 120px;
+  }
+
+  /* Grid List */
+  mat-grid-tile {
+    background: rgb(228, 173, 230);
+  }
+  
